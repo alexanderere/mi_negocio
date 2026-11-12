@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>VetPatrol - Inicio</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body> 
+
+<header>
+<button id="agendar-cita" class="boton-limpio"> <h1>VetPatrol - Control - Veterinaria</h1> </button>
+<h2>La mejor atención para tus mascotas</h2>
+
+<div class="menu" >
+    <nav>
+    <a href="index.html" class="activo"> Inicio  </a>
+    <a href="informacion.html"> Información  </a> 
+    <a href="agendar.html"> Agendar     </a>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html"> Contacto  </a>
+    <a href="mi_perfil.html"> Mi perfil    </a>
+    </nav>
+    <br>   <p id="mensaje"></p>
+</div>
+
+</header>
+
+<main>
+
+<section id="inicio">
+
+    <img class="imagen" src="imagenes/perro.webp" alt="Perro">
+
+    <button > <a href="agendar.html"> Agendar cita  </a></button>
+    <button > <a href="agendar.html"> Registrar mascota  </a></button>
+
+</section>
+
+<section id="nosotros">
+
+<div class="presentacion">
+    <div class="texto-presentacion">
+
+        <h2 class="centrado">¿Que hacemos?
+            </h2>
+        <p class="datos">Nos concentramos de forma dedicada en cuidar a tus mascotas, la prioridad es el cuidado de
+        tus mascotas. Nos ubicamos en Patzcuaro, Michoacán. En el libramiento a la altura de cinépolis
+        Nuestros servicios van desde baños caninos, tratamientos,
+        vacunas, adopciones etc. Todo para la tranquilidad de el cliente y 
+        la mascota</p>
+
+    </div>
+
+<img  class="imagen-negocio" src="https://somosmaka.com/cdn/shop/articles/ai-generated-8985310_1280.jpg?v=1728951304" alt="ejemplo">
+
+</div>
+
+    <div class="centrado">
+        <button> <a href="agendar.html "> Registrarse </a> </button>
+        <button> <a href="#"> Iniciar sesión </a> </button>
+    </div>
+    
+</section>
+
+<br>
+
+<section class="promocion" aria-labelledby="titulo-cotizador">
+   <div class="centrado"><h2 id="titulo-cotizador ">Cotiza tu compra</h2></div> 
+<div class="centrado">
+    <label for="producto">Servicio     :</label>
+    <select id="producto">
+        <option value="">Selecciona un servicio</option>
+        <option value="350">Consulta general - $350.00</option>
+        <option value="250">Vacunación - $250.00</option>
+        <option value="200">Baños y estética - $200.00</option>
+        <option value="180">Desparasitación - $180.00</option>
+        <option value="1200">Cirugías y esterilización - $1,200.00</option>
+        <option value="0">Adopciones - Gratis</option>
+        <option value="500">Urgencias - $500.00</option>
+        <option value="600">Hospitalización - $600.00 / día</option>
+    </select>
+</div> <div class="centrado">
+    <label for="cantidad">Cantidad</label>
+    <input id="cantidad" type="number" min="1" max="20" step="1">
+</div> <div class="centrado">
+    <button id="boton-promocion" type="button">Ver promoción</button>
+    <button id="calcular" type="button">Calcular</button>
+    <button id="limpiar" type="button">Limpiar</button>
+</div>  <div class="centrado">
+    <p id="mensaje-promocion" aria-live="polite"></p>
+    <p id="resultado" aria-live="polite"></p>
+</div>  <br>
+</section>
+
+</main>
+
+<footer>
+Contactanos! <br>
+<strong>Télefono</strong> 4433029882
+<br>
+VetPatrol - Todos los derechos reservados ©
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+
+</html>

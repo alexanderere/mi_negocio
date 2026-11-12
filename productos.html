@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VetPatrol - Productos</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body> 
+
+<header>
+<h1>VetPatrol - Control - Veterinaria</h1>
+<h2>La mejor atención para tus mascotas</h2>
+
+<div class="menu">
+    <nav>
+    <a href="index.html">Inicio</a>
+    <a href="informacion.html">Información</a> 
+    <a href="agendar.html">Agendar</a>
+    <a href="productos.html" class="activo">Productos</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="mi_perfil.html">Mi perfil</a>
+    </nav>
+    <br><p id="mensaje"></p>
+</div>
+
+</header>
+
+<main>
+
+<section id="servicios">
+    <h2 class="centrado">Nuestros servicios</h2>
+
+    <div class="contenedor-productos">
+
+        <div class="producto">
+            <img src="https://www.zooplus.es/magazine/wp-content/uploads/2017/10/fotolia_107403823-768x512.webp" alt="Consulta veterinaria general">
+            <h3>Consulta general</h3>
+            <p>Revisión completa del estado de salud de tu mascota, con diagnóstico y recomendaciones.</p>
+            <p class="precio">$350.00</p>
+            <label for="cantidad-1">Cantidad:</label>
+            <input type="number" id="cantidad-1" min="0" step="1" value="0">
+            <p>Subtotal: $<span id="subtotal-1">0.00</span></p>
+        </div>
+
+        <div class="producto">
+            <img src="https://masterpetss.com/cdn/shop/articles/brown-border-collie-dog-during-visit-in-vet-2022-03-17-04-25-37-utc_412c7dc5-a2df-4785-8e1e-8b53c2dda806_1024x.jpg?v=1789626550" alt="Vacunación para mascotas">
+            <h3>Vacunación</h3>
+            <p>Aplicación de vacunas para perros y gatos según su edad y calendario.</p>
+            <p class="precio">$250.00</p>
+            <label for="cantidad-2">Cantidad:</label>
+            <input type="number" id="cantidad-2" min="0" step="1" value="0">
+            <p>Subtotal: $<span id="subtotal-2">0.00</span></p>
+        </div>
+
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTywerYWaHVaf-V_kN5FNvcwxdWYZeWe63pkWvVQ4EqhZIRrdyX1zBEsNI&s=10" alt="Baño y estética canina">
+            <h3>Baños y estética</h3>
+            <p>Baño, corte de uñas, cepillado y cuidado del pelaje para mantener a tu mascota limpia.</p>
+            <p class="precio">$200.00</p>
+            <label for="cantidad-3">Cantidad:</label>
+            <input type="number" id="cantidad-3" min="0" step="1" value="0">
+            <p>Subtotal: $<span id="subtotal-3">0.00</span></p>
+        </div>
+
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSRYw38HmVWxOu2ySO-vbzwPxwFxXvleZiacHD_2AMpGZj0TF0Htl2-tf3&s=10" alt="Desparasitación de mascotas">
+            <h3>Desparasitación</h3>
+            <p>Tratamientos internos y externos para prevenir parásitos y proteger su salud.</p>
+            <p class="precio">$180.00</p>
+            <label for="cantidad-4">Cantidad:</label>
+            <input type="number" id="cantidad-4" min="0" step="1" value="0">
+            <p>Subtotal: $<span id="subtotal-4">0.00</span></p>
+        </div>
+
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf7xXWmmJygX82yUUcrJkI_FWSNeB41t7EZngNEQfCtA&s=10" alt="Cirugía y esterilización veterinaria">
+            <h3>Cirugías y esterilización</h3>
+            <p>Procedimientos quirúrgicos con equipo especializado y seguimiento postoperatorio.</p>
+            <p class="precio">$1,200.00</p>
+            <label for="cantidad-5">Cantidad:</label>
+            <input type="number" id="cantidad-5" min="0" step="1" value="0">
+            <p>Subtotal: $<span id="subtotal-5">0.00</span></p>
+        </div>
+
+        <div class="producto">
+            <img src="https://www.laclinicaveterinaria.com/wp-content/uploads/2022/09/Pautas-para-la-adopcion-de-mascotas.webp" alt="Adopción de mascotas rescatadas">
+            <h3>Adopciones</h3>
+            <p>Vinculamos mascotas rescatadas con familias responsables que buscan un nuevo compañero.</p>
+            <p class="precio">Gratis</p>
+            <label for="cantidad-6">Cantidad:</label>
+            <input type="number" id="cantidad-6" min="0" step="1" value="0">
+            <p>Subtotal: $<span id="subtotal-6">0.00</span></p>
+        </div>
+
+        <div class="producto">
+            <img src="https://escuelaelbs.lat/wp-content/uploads/urgencias-veterinarias.jpg" alt="Atención de urgencias veterinarias">
+            <h3>Urgencias</h3>
+            <p>Atención inmediata para casos críticos durante el horario de la clínica.</p>
+            <p class="precio">$500.00</p>
+            <label for="cantidad-7">Cantidad:</label>
+            <input type="number" id="cantidad-7" min="0" step="1" value="0">
+            <p>Subtotal: $<span id="subtotal-7">0.00</span></p>
+        </div>
+
+        <div class="producto">
+            <img src="https://cdn.milenio.com/uploads/media/2026/07/23/hospital-veterinario-cdmx-costo-hospitalizar.jpg" alt="Hospitalización de mascotas">
+            <h3>Hospitalización</h3>
+            <p>Cuidado y monitoreo continuo para mascotas que requieren observación o recuperación.</p>
+            <p class="precio">$600.00 / día</p>
+            <label for="cantidad-8">Cantidad:</label>
+            <input type="number" id="cantidad-8" min="0" step="1" value="0">
+            <p>Subtotal: $<span id="subtotal-8">0.00</span></p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="resumen-compra">
+<h2>Resumen de mi compra</h2>
+<button type="button" id="calcular-compra">Calcular compra</button>
+<p>Importe: $<span id="importe-compra">0.00</span></p>
+<p>Descuento: $<span id="descuento-compra">0.00</span></p>
+<p>Total a pagar: $<span id="total-compra">0.00</span></p>
+</section>
+
+</main>
+
+<footer>
+Contactanos! <br>
+<strong>Télefono</strong> 4433029882
+<br>
+VetPatrol - Todos los derechos reservados ©
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+
+</html>

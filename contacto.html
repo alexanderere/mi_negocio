@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>VetPatrol - Contacto</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body> 
+
+<header>
+<h1>VetPatrol - Control - Veterinaria</h1> 
+<h2>La mejor atención para tus mascotas</h2>
+
+<div class="menu">
+    <nav>
+    <a href="index.html">Inicio  </a>
+    <a href="informacion.html"> Información  </a> 
+    <a href="agendar.html"> Agendar     </a>
+    <a href="productos.html">Productos</a>
+    <a href="contacto.html" class="activo"> Contacto  </a>
+    <a href="mi_perfil.html"> Mi perfil    </a>
+    </nav>
+</div>
+
+</header>
+
+<main>
+
+<h2 class="fondo-solido"> Contacto </h2>
+<section id="contacto" class="centrado">
+
+    <div class="columna" style="flex: 1 1 280px;">
+        <h4 class="centrado">Contacto</h4>
+        <p class="centrado">
+            Nos ubicamos en el libramiento a la altura de Cinépolis <br>
+            - 4433029882 <br>
+            - VetPatrol@gmail.com <br>
+            - De 9AM a 7PM
+        </p>
+        <img class="imagen" src="https://imgcom.davante.es/53/blog/2025/11/44319.png" alt="Veterinaria">
+        <img class="imagen" src="https://vetgirlontherun.com/wp-content/uploads/2019/08/Membership-nurse-tech.jpg" alt="Personal veterinario">
+        <img class="imagen" src="https://vetgirlontherun.com/wp-content/uploads/2023/05/Picture1.png" alt="Atención veterinaria">
+    </div>
+
+    <div class="columna" style="flex: 1 1 280px;">
+        <h4>Solicita Información</h4>
+        <form>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+
+                <label for="preferencia">¿Cómo prefieres que te contactemos?</label>
+                <select id="preferencia" name="preferencia">
+                    <option value="telefono">Llamada telefónica</option>
+                    <option value="correo">Correo electrónico</option>
+                    <option value="whatsapp">WhatsApp</option>
+                </select>
+
+                <label for="especie">¿De qué especie es su mascota?</label>
+                <select name="especie" id="especie" required>
+                    <option value="">-- Seleccione --</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="ave" selected>Ave</option>
+                    <option value="conejo" disabled>Conejo</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            </fieldset>
+
+            <button type="submit">Enviar solicitud</button>
+            <button type="reset">Limpiar formulario</button>
+        </form>
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+Contactanos! <br>
+<strong>Télefono</strong> 4433029882
+<br>
+VetPatrol - Todos los derechos reservados ©
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>
